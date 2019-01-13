@@ -129,7 +129,7 @@
 <!-- Carousel
 ================================================== -->
 <img class="mainHeader" src="docs/examples/carousel/featured.png">
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide row col-xs-12" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -194,13 +194,14 @@
   </a>
 
 </div><!-- /.carousel -->
-<div id="About_Us" class="pull-right">
+  <div id="About_Us" class="pull-right">
   <h1 class="headerAbout">About Us</h1>
   <h2 class="smallerHeaderAbout">Best Site For Readers Who Enjoy New Comics</h2>
   <h3 class="smallestHeaderAbout">And the Ideal Home for Emerging Comic Creators</h2>
     <p class="aboutPara">EmporiaComics serves both readers and creators of comics, and we strive to make an artist's work available to as many readers as possible.</p>
     <p class="aboutPara">Read more about us <a href="#"><u>here</u></a> and what we can offer.</p>
 </div>
+
 <div id="EmporiaFeed" class="pull-right">
   <h1 class="headerFeed">Updates</h1>
 </div>
@@ -214,7 +215,7 @@
 
 
 <hr class="featurette-divider">
-<div class="full-width first-feature container">
+<div class="full-width first-feature container col-xs-12">
   <div class="">
     <img class="headerImage feature-header" src="docs/examples/carousel/Trending%20Now.png">
     <div class="row featurette">
@@ -249,147 +250,195 @@
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="container col-xs-12">
   <img class="headerImage trending-image" src="docs/examples/carousel/New%20Releases.png">
-<div class="EmporiaTabs">
-<ul class="nav nav-tabs" role="tablist">
-  <li role="presentation" class="active"><a href="#Adventure" aria-controls="Adventure" role="tab" data-toggle="tab">Adventure</a></li>
-  <li role="presentation"><a href="#Action" aria-controls="Action" role="tab" data-toggle="tab">Action</a></li>
-  <li role="presentation"><a href="#Comedy" aria-controls="Comedy" role="tab" data-toggle="tab">Comedy</a></li>
-  <li role="presentation"><a href="#Life&Love" aria-controls="Life&Love" role="tab" data-toggle="tab">Life & Love</a></li>
-  <li role="presentation"><a href="#Mystery" aria-controls="Mystery" role="tab" data-toggle="tab">Mystery</a></li>
-  <li role="presentation"><a href="#Horror" aria-controls="Horror" role="tab" data-toggle="tab">Horror</a></li>
-  <li role="presentation"><a href="#LGBT+" aria-controls="LGBT+" role="tab" data-toggle="tab">LGBT+</a></li>
-</ul>
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade active" id="Adventure">
-      <!-- Three columns of text below the carousel -->
-      <div class="row row-margin-bottom">
-        <div class="col-lg-3">
-          <img class="img-container" src="docs/examples/carousel/BIG%20HERN%20COMPLETE.jpg" alt="Generic placeholder image" width="182" height="224">
+  <div class="EmporiaTabs">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#Adventure" aria-controls="Adventure" role="tab" data-toggle="tab">Adventure</a></li>
+    <li role="presentation"><a href="#Action" aria-controls="Action" role="tab" data-toggle="tab">Action</a></li>
+    <li role="presentation"><a href="#Comedy" aria-controls="Comedy" role="tab" data-toggle="tab">Comedy</a></li>
+    <li role="presentation"><a href="#LifeLove" aria-controls="LifeLove" role="tab" data-toggle="tab">Life & Love</a></li>
+    <li role="presentation"><a href="#Mystery" aria-controls="Mystery" role="tab" data-toggle="tab">Mystery</a></li>
+    <li role="presentation"><a href="#Horror" aria-controls="Horror" role="tab" data-toggle="tab">Horror</a></li>
+    <li role="presentation"><a href="#LGBT+" aria-controls="LGBT+" role="tab" data-toggle="tab">LGBT+</a></li>
+     <li role="presentation"><a href="Sports" aria-controls="Sports" role="tab" data-toggle="tab">Sports</a></li>
+  </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade active" id="Adventure">
+        <!-- Three columns of text below the carousel -->
+        <div class="row row-margin-bottom">
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/BIG%20HERN%20COMPLETE.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/The%20Groomsmen.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/Chris%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+           <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+         </div>
+         <div class="col-lg-3 tabCover">
+
         </div>
-        <div class="col-lg-3">
+        </div><!-- /.row -->
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="Action">
+        <div class="row row-margin-bottom">
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+           <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+         </div>
+         <div class="col-lg-3 tabCover">
+
+        </div>
+        </div><!-- /.row -->
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="Comedy">
+        <div class="row row-margin-bottom">
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/BIG%20HERN%20COMPLETE.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/The%20Groomsmen.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+            <img class="img-container" src="docs/examples/carousel/Chris%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+           <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+          </div>
+          <div class="col-lg-3 tabCover">
+
+          </div>
+        </div><!-- /.row -->
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="LifeLove">  
+      <div class="row row-margin-bottom">
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
           <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
-          <img class="img-container" src="docs/examples/carousel/The%20Groomsmen.jpg" alt="Generic placeholder image" width="182" height="224">
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
-          <img class="img-container" src="docs/examples/carousel/Chris%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        <div class="col-lg-3 tabCover">
+
         </div>
-        <div class="col-lg-3">
-         <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-       </div>
-      </div><!-- /.row -->
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="Action">
+      </div><!-- /.row --></div>
+      <div role="tabpanel" class="tab-pane fade" id="Mystery">  
+      <div class="row row-margin-bottom">
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+
+        </div>
+      </div><!-- /.row --></div>
+      <div role="tabpanel" class="tab-pane fade" id="Horror">  
       <div class="row row-margin-bottom">
         <div class="col-lg-3">
           <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 tabCover">
           <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 tabCover">
           <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 tabCover">
           <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
-         <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-       </div>
-      </div><!-- /.row -->
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="Comedy">
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+
+        </div>
+      </div><!-- /.row --></div>
+      <div role="tabpanel" class="tab-pane fade" id="LGBT+">  
+      <div class="row row-margin-bottom">
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+
+        </div>
+      </div><!-- /.row --></div>
+      <div role="tabpanel" class="tab-pane fade" id="Sports">  
       <div class="row row-margin-bottom">
         <div class="col-lg-3">
-          <img class="img-container" src="docs/examples/carousel/BIG%20HERN%20COMPLETE.jpg" alt="Generic placeholder image" width="182" height="224">
+          <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        </div>
+        <div class="col-lg-3 tabCover">
           <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
-          <img class="img-container" src="docs/examples/carousel/The%20Groomsmen.jpg" alt="Generic placeholder image" width="182" height="224">
+        <div class="col-lg-3 tabCover">
+          <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
         </div>
-        <div class="col-lg-3">
-          <img class="img-container" src="docs/examples/carousel/Chris%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
+        <div class="col-lg-3 tabCover">
+
         </div>
-        <div class="col-lg-3">
-         <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-        </div>
-      </div><!-- /.row -->
+      </div><!-- /.row --></div>
     </div>
-    <div role="tabpanel" class="tab-pane fade" id="Life&Love">  <div class="row row-margin-bottom">
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-    </div><!-- /.row --></div>
-    <div role="tabpanel" class="tab-pane fade" id="Mystery">  <div class="row row-margin-bottom">
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-    </div><!-- /.row --></div>
-    <div role="tabpanel" class="tab-pane fade" id="Horror">  <div class="row row-margin-bottom">
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-    </div><!-- /.row --></div>
-    <div role="tabpanel" class="tab-pane fade" id="LGBT+">  <div class="row row-margin-bottom">
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Clawson%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/McKinnon%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-      <div class="col-lg-3">
-        <img class="img-container" src="docs/examples/carousel/Bobby%20Stompy%20Complete.jpg" alt="Generic placeholder image" width="182" height="224">
-      </div>
-    </div><!-- /.row --></div>
-  </div>
 
-
+</div>
 
 
 </div>
