@@ -717,51 +717,51 @@ var PhotoSwipeUI_Default =
 		}
 	};
 	
-	ui.onGlobalTap = function(e) {
-		e = e || window.event;
-		var target = e.target || e.srcElement;
+	// ui.onGlobalTap = function(e) {
+	// 	e = e || window.event;
+	// 	var target = e.target || e.srcElement;
 
-		if(_blockControlsTap) {
-			return;
-		}
+	// 	if(_blockControlsTap) {
+	// 		return;
+	// 	}
 
-		if(e.detail && e.detail.pointerType === 'mouse') {
+	// 	if(e.detail && e.detail.pointerType === 'mouse') {
 
-			// close gallery if clicked outside of the image
-			if(_hasCloseClass(target)) {
-				pswp.close();
-				return;
-			}
+	// 		// close gallery if clicked outside of the image
+	// 		if(_hasCloseClass(target)) {
+	// 			pswp.close();
+	// 			return;
+	// 		}
 
-			if(framework.hasClass(target, 'pswp__img')) {
-				if(pswp.getZoomLevel() === 1 && pswp.getZoomLevel() <= pswp.currItem.fitRatio) {
-					if(_options.clickToCloseNonZoomable) {
-						pswp.close();
-					}
-				} else {
-					pswp.toggleDesktopZoom(e.detail.releasePoint);
-				}
-			}
+	// 		if(framework.hasClass(target, 'pswp__img')) {
+	// 			if(pswp.getZoomLevel() === 1 && pswp.getZoomLevel() <= pswp.currItem.fitRatio) {
+	// 				if(_options.clickToCloseNonZoomable) {
+	// 					pswp.close();
+	// 				}
+	// 			} else {
+	// 				pswp.toggleDesktopZoom(e.detail.releasePoint);
+	// 			}
+	// 		}
 			
-		} else {
+	// 	} else {
 
-			// tap anywhere (except buttons) to toggle visibility of controls
-			if(_options.tapToToggleControls) {
-				if(_controlsVisible) {
-					ui.hideControls();
-				} else {
-					ui.showControls();
-				}
-			}
+	// 		// tap anywhere (except buttons) to toggle visibility of controls
+	// 		if(_options.tapToToggleControls) {
+	// 			if(_controlsVisible) {
+	// 				ui.hideControls();
+	// 			} else {
+	// 				ui.showControls();
+	// 			}
+	// 		}
 
-			// tap to close gallery
-			if(_options.tapToClose && (framework.hasClass(target, 'pswp__img') || _hasCloseClass(target)) ) {
-				pswp.close();
-				return;
-			}
+	// 		// tap to close gallery
+	// 		if(_options.tapToClose && (framework.hasClass(target, 'pswp__img') || _hasCloseClass(target)) ) {
+	// 			pswp.close();
+	// 			return;
+	// 		}
 			
-		}
-	};
+	// 	}
+	// };
 	ui.onMouseOver = function(e) {
 		e = e || window.event;
 		var target = e.target || e.srcElement;

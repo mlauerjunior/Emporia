@@ -317,7 +317,7 @@ var _options = {
 	loop: false,
 	pinchToClose: true,
 	closeOnScroll: false,
-	closeOnVerticalDrag: true,
+	closeOnVerticalDrag: false,
 	verticalDragRange: 0.75,
 	hideAnimationDuration: 333,
 	showAnimationDuration: 333,
@@ -979,46 +979,46 @@ var publicMethods = {
 		framework.addClass(template, 'pswp--visible');
 	},
 
-	// Close the gallery, then destroy it
-	close: function() {
-		if(!_isOpen) {
-			return;
-		}
+	// // Close the gallery, then destroy it
+	// close: function() {
+	// 	if(!_isOpen) {
+	// 		return;
+	// 	}
 
-		_isOpen = false;
-		_isDestroying = true;
-		_shout('close');
-		_unbindEvents();
+	// 	_isOpen = false;
+	// 	_isDestroying = true;
+	// 	_shout('close');
+	// 	_unbindEvents();
 
-		_showOrHide(self.currItem, null, true, self.destroy);
-	},
+	// 	_showOrHide(self.currItem, null, true, self.destroy);
+	// },
 
-	// destroys the gallery (unbinds events, cleans up intervals and timeouts to avoid memory leaks)
-	destroy: function() {
-		_shout('destroy');
+	// // destroys the gallery (unbinds events, cleans up intervals and timeouts to avoid memory leaks)
+	// destroy: function() {
+	// 	_shout('destroy');
 
-		if(_showOrHideTimeout) {
-			clearTimeout(_showOrHideTimeout);
-		}
+	// 	if(_showOrHideTimeout) {
+	// 		clearTimeout(_showOrHideTimeout);
+	// 	}
 		
-		template.setAttribute('aria-hidden', 'true');
-		template.className = _initalClassName;
+	// 	template.setAttribute('aria-hidden', 'true');
+	// 	template.className = _initalClassName;
 
-		if(_updateSizeInterval) {
-			clearInterval(_updateSizeInterval);
-		}
+	// 	if(_updateSizeInterval) {
+	// 		clearInterval(_updateSizeInterval);
+	// 	}
 
-		framework.unbind(self.scrollWrap, _downEvents, self);
+	// 	framework.unbind(self.scrollWrap, _downEvents, self);
 
-		// we unbind scroll event at the end, as closing animation may depend on it
-		framework.unbind(window, 'scroll', self);
+	// 	// we unbind scroll event at the end, as closing animation may depend on it
+	// 	framework.unbind(window, 'scroll', self);
 
-		_stopDragUpdateLoop();
+	// 	_stopDragUpdateLoop();
 
-		_stopAllAnimations();
+	// 	_stopAllAnimations();
 
-		_listeners = null;
-	},
+	// 	_listeners = null;
+	// },
 
 	/**
 	 * Pan image to position
