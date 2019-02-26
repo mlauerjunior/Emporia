@@ -639,14 +639,14 @@ var PhotoSwipeUI_Default =
 		if(!_options.showAnimationDuration) {
 			framework.removeClass( _controls, 'pswp__ui--hidden');
 		}
-		// _listen('initialZoomIn', function() {
-		// 	if(_options.showAnimationDuration) {
-		// 		framework.removeClass( _controls, 'pswp__ui--hidden');
-		// 	}
-		// });
-		// _listen('initialZoomOut', function() {
-		// 	framework.addClass( _controls, 'pswp__ui--hidden');
-		// });
+		_listen('initialZoomIn', function() {
+			if(_options.showAnimationDuration) {
+				framework.removeClass( _controls, 'pswp__ui--hidden');
+			}
+		});
+		_listen('initialZoomOut', function() {
+			framework.addClass( _controls, 'pswp__ui--hidden');
+		});
 
 		_listen('parseVerticalMargin', _applyNavBarGaps);
 		
