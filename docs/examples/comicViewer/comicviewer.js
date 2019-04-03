@@ -38,11 +38,11 @@ var options = {
     closeOnScroll: false,
     index: 0,
     getThumbBoundsFn: function(index) {
-            var obj = document.getElementById("testContainer");
-            var rect = obj.getBoundingClientRect();
+            // var obj = document.getElementById("galleryPSWP");
+            // var rect = obj.getBoundingClientRect();
             // console.log(rect);
 
-        // var rect = {x: '',  y: '' , w: ''}
+        var rect = {x: 0,  y: 0 , w: 0}
         var templateBounds = template.parentElement.getBoundingClientRect();
         rect.x -= templateBounds.left;
         rect.y -= templateBounds.top;

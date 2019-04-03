@@ -1,0 +1,74 @@
+.memberHeader, .member-bio, .memberTitles, .memberHeaders{
+text-align: center;
+}
+.memberInfo{
+	padding: 40px 185px;
+}
+.memberHeaders{
+	height: 192px;
+	border: 1px solid black;
+}
+.member-info{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+.memberWorks{
+	margin: 0 185px 50px 185px;
+}
+.memberHeaders h2{
+	padding: 55px;
+}
+.memberTitles{
+	border: 1px solid red;
+}
+.memberTitle{
+	display: block;
+	margin: 10px 0;
+}
+.aboutMember{
+	margin-left: 195px;
+}
+.aboutMemberBody{
+	text-transform: lowercase;
+}
+
+.fab {
+  padding: 25px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 55%;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-patreon{
+	background-color: rgb(230, 79, 57);
+	color: white;
+}
+
+.fa-twitter-square {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+

@@ -17,7 +17,9 @@ html, body. div{
 .pull-down{
   margin:80px 0 0 75px;
 }
-
+#testContainer{
+  position: relative;
+}
 .header-left{
   margin-left: 10px;
 }
@@ -312,7 +314,7 @@ textarea.form-control{
 ------------------------- */
 .mainHeader{
   width: 20%;
-  margin: 24px 20px -6px 613px;
+  margin: 24px 20px -6px 575px;
   z-index: -1;
 }
 .feature-header{
