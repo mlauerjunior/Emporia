@@ -15,6 +15,9 @@
   <link href="docs/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <link href="docs/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -37,18 +40,22 @@
 ================================================== -->
 <body>
 <div class="container">
-  <div class="col-lg-12">
+  <div class="col-xs-12">
     <img class="main-logo" src="docs/examples/carousel/LOGO.png">
     <img src="docs/examples/carousel/EmporiaHeader.png" class="headerImageMain">
-    <div class="col-lg-4 pull-right">
-      <div class="col-lg-6 pull-down">
+    <div class="col-xs-4 pull-right visible-desktop">
+      <div class="col-xs-6 pull-down">
         <a class="join-now" href="Conta">Join Emporia Comics</a>
       </div>
-      <div class="col-lg-3 pull-down header-left">
+      <div class="col-xs-3 pull-down header-left visible-desktop">
         <a class="sign-in pull-right" href="#">Sign In</a>
+        <i class="far fa-user-circle"></i>
       </div>
     </div>
-    <div class="col-lg-3 pull-right search-input">
+    <div class="col-xs-3 pull-down header-left visible-mobile">
+      <i class="far fa-user-circle"><a class="sign-in pull-right" href="#"></a></i>
+    </div>
+    <div class="col-lg-3 pull-right search-input visible-desktop">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search for...">
         <span class="input-group-btn">
@@ -56,6 +63,11 @@
             </span>
       </div>
     </div>
+  <div class="col-lg-3 pull-right search-input visible-mobile ">
+    <i class="fas fa-search"></i>
+  </div>
+
+
   </div>
 
 </div>
@@ -119,6 +131,13 @@
                 <li><a href="#">E-mail</a></li>
               </ul>
             </li>
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Artist Merchandise</a></li>
+                <li><a href="#">Emporia Merchandise</a></li>
+                 </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -139,7 +158,7 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <div class="container-caption">
+      <div class="container-caption visible-desktop">
         <h1>The Bramacuda</h1>
         <p>While testing a new experimental diving suit while investigating the Rowsdower Corporation for dumping pollutants into the Pacific Ocean, marine biologist Dr. Eric Bramwell was swept away by a rogue wave and found himself trapped in an underwater cloud of poisonous chemicals.  The pollutants reacted violently with the diving suit, fusing the suit to his body and granting him the ability to breathe underwater and communicate with denizens of the sea.  Now, doomed to spend eternity below surface, The Bramacuda is determined to take down the Rowsdower Corporation and save the sea once and for all.
         </p>
@@ -147,23 +166,36 @@
       <div class="main-carousel-image">
         <img class="first-slide" src="docs/examples/carousel/Bramacuda%20Complete.jpg" alt="First slide">
       </div>
+      <div class="container-caption visible-mobile">
+        <h1>The Bramacuda</h1>
+        <p>While testing a new experimental diving suit while investigating the Rowsdower Corporation for dumping pollutants into the Pacific Ocean, marine biologist Dr. Eric Bramwell was swept away by a rogue wave and found himself trapped in an underwater cloud of poisonous chemicals.
+        </p>
+      </div>
     </div>
     <div class="item">
-      <div class="container-caption">
+      <div class="container-caption visible-desktop">
         <h1>CC-422</h1>
         <p>Prodigy aerospace engineer and test pilot Christopher Anthony was blown to smithereens on the virgin flight of his new experimental supersonic jet.  Miraculously, his brain was salvaged from the wreckage and kept alive.  Relying on his research and blueprints, the military created an indestructible flight suit under the codename CC-422 and mounted Christopher's brain in the CPU.  Now tasked with defending the United States from spy satellites and stealth aircraft, CC-422 is the ultimate weapon in the American arsenal.</p>
       </div>
       <div class="main-carousel-image">
         <img class="second-slide" src="docs/examples/carousel/Chris%20Complete.jpg" alt="Second slide">
       </div>
+      <div class="container-caption visible-mobile">
+        <h1>CC-422</h1>
+        <p>Prodigy aerospace engineer and test pilot Christopher Anthony was blown to smithereens on the virgin flight of his new experimental supersonic jet.  Miraculously, his brain was salvaged from the wreckage and kept alive. .</p>
+      </div>
     </div>
     <div class="item">
-      <div class="container-caption">
+      <div class="container-caption visible-desktop">
         <h1>The Clawsons</h1>
         <p>From the pen of Paul Levesque comes The Clawsons, a blend of humor and action set in 1960s Chicago.  While celebrating their wedding, Bobby and Elizabeth find themselves trapped in a never-ending acid trip in which they possess fantastic powers.  Even their pets, Edna and Louie, are transformed into ferocious beasts hellbent on keeping the couple safe as they traverse the warped, unpredictable version of Chicago in which they find themselves.  Will they find their keys?  Will their apartment stop rotating?  Will this night ever end?  Strap in and prepare yourself for this psychedelic journey, but be sure to bring a partner.</p>
       </div>
       <div class="main-carousel-image">
         <img class="third-slide" src="docs/examples/carousel/Something%20Something%20Complete.jpg" alt="Third slide">
+      </div>
+      <div class="container-caption visible-mobile">
+        <h1>The Clawsons</h1>
+        <p>From the pen of Paul Levesque comes The Clawsons, a blend of humor and action set in 1960s Chicago.  While celebrating their wedding, Bobby and Elizabeth find themselves trapped in a never-ending acid trip in which they possess fantastic powers. </p>
       </div>
     </div>
     <!--<div class="item">-->
@@ -606,9 +638,9 @@
 
 </div>
 <div class="row splitters">
-  <div class="col-xs-12"; style="left: 25px">
+  <div class="col-xs-12">
     <!-- Three columns of text below the carousel -->
-    <div class="col-xs-5 sectioned-splitter first-split">
+    <div class="col-sm-5 col-xs-12 sectioned-splitter first-split">
       <h1>Want to be featured on Emporia?</h1>
       <div class="col-xs-6">
         <form>
@@ -636,7 +668,8 @@
       </div>
     </div><!-- /.row -->
     <div class="row splitters">
-      <div class="col-xs-5 sectioned-splitter">
+    <div class="col-xs-12 col-sm-5">
+      <div class="col-xs-12 sectioned-splitter">
         <h1>Artist Spotlight</h1>
         <div class="col-xs-4">
           <img class="artist-image" src="docs/examples/carousel/brian.png"></img>
@@ -645,12 +678,10 @@
           <h3>Brian Crooks</h3>
           <h4><i>ARTIST</i></h4>
           <p class="bioTitles"><strong>Worked on:</strong> War & Money, Flea, The Clawsons, Bramacuda vs. Rowsdower</p>
-          <p class="bioPara">Growing up, Brian Crooks lived in four states before his tenth birthday.  He says that during all of those moves, he spent a lot of time reading comic books and telling himself stories that would become the basis for his work.  "My favorite was always Nightcrawler," he says.  "I've always loved that character design and thought his backstory was really interesting. . . </p>
+          <p class="bioPara visible-desktop">Growing up, Brian Crooks lived in four states before his tenth birthday.  He says that during all of those moves, he spent a lot of time reading comic books and telling himself stories that would become the basis for his work.  "My favorite was always Nightcrawler," he says.  "I've always loved that character design and thought his backstory was really interesting. . . </p>
           <p><a href="#">Continue reading</a></p>
         </div>
-        <DIV>
-
-        </DIV>
+        </div>
       </div>
 
     </div>
@@ -659,7 +690,7 @@
 <!-- Chat -->
 <hr class="Chat">
 
-<div class="Chat_Ribbon">
+<div class="Chat_Ribbon visible-desktop">
   <div class="Chat_container"; style="margin-left: 86px">
     <div class="row">
       <div class="col-lg-4 Chat_Intro">

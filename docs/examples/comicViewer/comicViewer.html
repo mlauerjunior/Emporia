@@ -15,24 +15,13 @@
   <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
   <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-<!-- Core CSS file -->
-<link rel="stylesheet" href="photoswipe.css"> 
 
-<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
-     In the folder of skin CSS file there are also:
-     - .png and .svg icons sprite, 
-     - preloader.gif (for browsers that do not support CSS animations) -->
-<link rel="stylesheet" href="default-skin/default-skin.css"> 
-
-<!-- Core JS file -->
-<script src="photoswipe.js"></script> 
-
-<!-- UI JS file -->
-<script src="photoswipe-ui-default.min.js"></script> 
 
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -138,74 +127,20 @@
   </div>
 </div>
 
-<div class="container col-xs-12" id="testContainer" style="position:relative;">
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" id="galleryPSWP">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-<!--                 <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
- -->
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="container col-xs-12">
+<h1 class="text-center">Evaluation</h1>
+<h3 class="text-center">By: <a href="#">Brian Crooks</a></h3>
+<div class="galleria">
+    <a id="fullscreen" href="../carousel/Evaluation-1.png">
+      <img src="../carousel/Evaluation-1.png" data-big="../carousel/Evaluation-1.png" data-title="My title" 
+      data-description="My description">
+    </a>
+    <img src="../carousel/Evaluation-2.png" data-title="My title" data-description="My description">
+    <img src="../carousel/Evaluation-3.png" data-title="My title" data-description="My description">
+    <img src="../carousel/Evaluation-4.png" data-title="My title" data-description="My description">
+    <img src="../carousel/Evaluation-5.png" data-title="My title" data-description="My description">
 </div>
+
 </div>
 
 
@@ -217,6 +152,24 @@
 <script src="../../dist/js/bootstrap.min.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
 <script src="../../assets/js/vendor/holder.min.js"></script>
+<script>
+(function() { 
+
+    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+    Galleria.configure({
+        transition: 'fade',
+        lightbox: true,
+    });
+    Galleria.ready(function() {
+        var gallery = this; // galleria is ready and the gallery is assigned
+          $('#fullscreen').click(function() {
+            gallery.toggleFullscreen(); // toggles the fullscreen
+          });
+    });
+    Galleria.run('.galleria');
+}());
+
+</script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="turnjs4/lib/turn.js"></script>
